@@ -1,21 +1,13 @@
 <template>
   <v-app>
+    <MainNav />
     <v-main>
-      <router-view/>
+
+    <h1 class="text-light-blue text-center">Dodgeball Eugene</h1>
     </v-main>
   </v-app>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'App',
-
-  data () {
-    return {
-      //
-    }
-  },
-})
+<script setup lang="ts">
+import MainNav from "@/components/MainNav.vue";
 </script>
