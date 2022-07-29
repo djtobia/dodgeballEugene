@@ -5,12 +5,10 @@ import 'vuetify/styles'
 // Vuetify
 import { createVuetify } from 'vuetify'
 
-//types
-import type { ThemeDefinition } from 'vuetify';
 //components
 import * as components from 'vuetify/components';
 
-const dodgeballEugeneTheme: ThemeDefinition = {
+const dodgeballEugeneTheme = {
   dark: true,
   colors: {
     "dark-blue": "#262262",
