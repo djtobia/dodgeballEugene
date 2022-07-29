@@ -1,8 +1,11 @@
 <template>
-  <p class="text-light-blue text-h4 font-weight-bold">
-    Remember playing dodgeball on the playground? It's back! Only this time the balls hurt a lot less.
-    We've replaced those hard rubber balls with friendly foam ones. Even if you haven't played in decades, we'll happily teach you.
-  </p>
+
+  <div class="text-center">
+    <p class="text-light-blue text-h4 font-weight-bold">
+      Remember playing dodgeball on the playground? It's back! Only this time the balls hurt a lot less.
+      We've replaced those hard rubber balls with friendly foam ones. Even if you haven't played in decades, we'll happily teach you.
+    </p>
+  </div>
   <v-row class="text-h4 pt-10">
     <v-col>
       <v-btn to="rules" color="light-blue-darken" rounded>Rules</v-btn>
