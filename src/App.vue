@@ -9,7 +9,7 @@
     </v-main>
     <v-container class="text-center">
       <div id="fb-root"></div>
-      <div class="fb-page" data-href="https://www.facebook.com/Dodgeball-Eugene-110959956928427" data-tabs="timeline" data-width="" data-height="" data-lazy="true" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Dodgeball-Eugene-110959956928427" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Dodgeball-Eugene-110959956928427">Dodgeball Eugene</a></blockquote></div>
+      <div class="fb-page" data-href="https://www.facebook.com/Dodgeball-Eugene-110959956928427" data-tabs="" data-width="" data-height="" data-lazy="true" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Dodgeball-Eugene-110959956928427" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Dodgeball-Eugene-110959956928427">Dodgeball Eugene</a></blockquote></div>
     </v-container>
   </v-app>
 </template>
@@ -17,3 +17,8 @@
 <script setup lang="ts">
 import MainNav from "@/components/MainNav.vue";
 </script>
+<style>
+li {
+  padding-top: 15px;
+}
+</style>
