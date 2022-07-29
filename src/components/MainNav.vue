@@ -3,9 +3,12 @@
     <template v-if="mdAndUp">
         <v-btn v-for="link in links" :id="link" :to="link.link" class="text-light-blue">{{link.text}}</v-btn>
     </template>
-    <v-app-bar-nav-icon v-else class="text-light-blue" @click.stop="navDrawer = !navDrawer"></v-app-bar-nav-icon>
+    <template v-if="smAndDown" v-slot:append>
+        <v-btn icon class="text-light-blue" @click.stop="navDrawer = !navDrawer"><v-icon>mdi-menu</v-icon></v-btn>
+    </template>
+
 </v-app-bar>
-<v-navigation-drawer v-model="navDrawer" temporary v-if="smAndDown">
+<v-navigation-drawer v-model="navDrawer" temporary v-if="smAndDown" location="right">
     <v-list class="text-light-blue">
         <v-list-item v-for="link in links" :id="`${link.text}-sidebar`"><v-btn flat :to="link.link" class="text-light-blue">{{link.text}}</v-btn></v-list-item>
     </v-list>
