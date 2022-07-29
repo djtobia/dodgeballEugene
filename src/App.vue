@@ -4,7 +4,7 @@
     <v-main>
       <v-container fluid>
         <v-img src="images/dodgeball-eugene-logo.png" alt="Dodgeball Eugene Logo" max-height="300"></v-img>
-        <router-view></router-view>
+        <router-view />
       </v-container>
     </v-main>
     <v-container class="text-center">
@@ -16,9 +16,14 @@
 
 <script setup lang="ts">
 import MainNav from "@/components/MainNav.vue";
-import { onMounted } from "vue";
+import { onMounted, ref, watch } from "vue";
+import { useRoute } from "vue-router";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+const route = useRoute();
+watch(route, () => {
+  window.scroll(0,0);
+});
 onMounted(() => {
   const firebaseConfig = {
     apiKey: "AIzaSyCKYjjaBuJz3kWj83adJUdu_icRYrJ1D20",
