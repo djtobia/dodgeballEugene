@@ -19,6 +19,7 @@ const links = [
     {text:"Home", link:"/"},
     {text:"Rules", link:"/rules"},
     {text:"Code of Conduct", link:"/code-of-conduct"},
+    {text:"Glossary", link:"/glossary"},
     {text:"About", link:"/about"}
 ];
 const navDrawer = ref(false);

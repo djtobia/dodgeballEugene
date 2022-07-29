@@ -26,6 +26,11 @@ const router = createRouter({
       path: "/code-of-conduct",
       name: "Code Of Conduct",
       component: () => import("../views/CodeOfConduct.vue"),
+    },
+    {
+      path: "/glossary",
+      name: "Glossary",
+      component: () => import("../views/Glossary.vue"),
     }
   ],
 });
