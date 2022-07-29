@@ -1,18 +1,19 @@
 <template>
-  <hello-world />
+  <p class="text-light-blue text-h4 font-weight-bold">
+    Remember playing dodgeball on the playground? It's back! Only this time the balls hurt a lot less.
+    We've replaced those hard rubber balls with friendly foam ones. Even if you haven't played in decades, we'll happily teach you.
+  </p>
+  <v-row class="text-h4 pt-10">
+    <v-col>
+      <v-btn to="rules" color="light-blue-darken" rounded>Rules</v-btn>
+    </v-col>
+    <v-col>
+      <v-btn to="code-of-conduct" color="light-blue-darken" rounded>Code of Conduct</v-btn>
+    </v-col>
+  </v-row>
+  <v-img src="/images/3v3-league.jpg" class="pt-10"></v-img>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script setup lang="ts">
 
-// Components
-import HelloWorld from '../components/HelloWorld.vue';
-
-export default defineComponent({
-  name: 'HomeView',
-
-  components: {
-    HelloWorld,
-  },
-});
 </script>

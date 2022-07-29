@@ -1,5 +1,5 @@
 <template>
-<v-app-bar color="dark-blue">
+<v-app-bar color="dark-blue" >
     <template v-if="mdAndUp">
         <v-btn v-for="link in links" :id="link" :to="link.link" class="text-light-blue">{{link.text}}</v-btn>
     </template>

@@ -15,6 +15,8 @@ const dodgeballEugeneTheme: ThemeDefinition = {
   colors: {
     "dark-blue": "#262262",
     "light-blue": "#25aae1",
+    "light-blue-darken": "#146080",
+    "background": "#3e404f",
   }
 }
 export default createVuetify({
