@@ -31,7 +31,12 @@ const router = createRouter({
       path: "/glossary",
       name: "Glossary",
       component: () => import("../views/Glossary.vue"),
-    }
+    },
+    {
+      path: "/dual-3",
+      name: "DUAL III",
+      component: () => import("../views/Dual.vue"),
+    },
   ],
 });
 
