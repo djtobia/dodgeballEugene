@@ -7,9 +7,33 @@
         <router-view />
       </v-container>
     </v-main>
-    <v-container class="text-center">
-      <div id="fb-root"></div>
-      <div class="fb-page" data-href="https://www.facebook.com/Dodgeball-Eugene-110959956928427" data-tabs="" data-width="" data-height="" data-lazy="true" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Dodgeball-Eugene-110959956928427" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Dodgeball-Eugene-110959956928427">Dodgeball Eugene</a></blockquote></div>
+    <v-container class="text-light-blue">
+      <v-row>
+        <v-col cols="6">
+          <v-row class="text-center pa-0 ma-0">
+            <v-col cols="12" class="pa-0">
+              <a href="https://www.facebook.com/groups/dodgeballeugene" target="_blank">
+                <v-img src="images/facebook.png" alt="facebook logo" max-height="94" />
+              </a>
+            </v-col>
+            <v-col cols="12" class="pa-0">
+              Join us on Facebook!
+            </v-col>
+          </v-row>
+        </v-col>
+        <v-col cols="6">
+          <v-row class="text-center pa-0 ma-0">
+            <v-col cols="12" class="pa-0">
+              <a href="https://www.meetup.com/dodgeball-eugene/" target="_blank">
+                <v-img src="images/meetup.png" alt="meetup logo" max-height="100" />
+              </a>
+            </v-col>
+            <v-col cols="12" class="pa-0">
+              Join us on Meetup!
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
     </v-container>
     <BottomNav />
   </v-app>
