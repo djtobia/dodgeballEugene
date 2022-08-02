@@ -13,7 +13,7 @@
       </p>
       <p class="pa-2">When: Wednesdays 6-8pm, Sundays 5-7pm</p>
       <p class="pa-2">For more information, view our <a href="https://www.facebook.com/Dodgeball-Eugene-110959956928427/" target="_blank">Facebook page</a>, or our <a href="https://www.meetup.com/dodgeball-eugene/" target="_blank">Meetup</a>!</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2866.1088944645935!2d-123.07612578424957!3d44.081106332672334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54c0e21a354334b9%3A0x57984ccb32c51d08!2sSheldon%20Community%20Center!5e0!3m2!1sen!2sus!4v1659129344618!5m2!1sen!2sus" :width="mobile ? '200' : '600'" :height="mobile ? '200' : '450'" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2866.1088944645935!2d-123.07612578424957!3d44.081106332672334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54c0e21a354334b9%3A0x57984ccb32c51d08!2sSheldon%20Community%20Center!5e0!3m2!1sen!2sus!4v1659129344618!5m2!1sen!2sus" :width="mobile ? '200' : '600'" :height="mobile ? '200' : '450'" style="border:0;" allowfullscreen="false" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
   </div>
@@ -25,7 +25,7 @@
       <v-btn to="code-of-conduct" color="light-blue-darken" rounded>Code of Conduct</v-btn>
     </v-col>
   </v-row>
-  <v-img src="/images/3v3-league.jpg" class="pt-10"></v-img>
+  <v-img src="/images/d-eugene-transparent.png" class="pt-10"></v-img>
 </template>
 
 <script setup lang="ts">
