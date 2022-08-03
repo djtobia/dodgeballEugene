@@ -22,6 +22,7 @@ const links = [
     {text:"Home", link:"/"},
     {text:"Rules", link:"/rules"},
     {text:"D.U.A.L. III", link: "/dual-3"},
+    {text:"League", link: "/league"},
     {text:"Code of Conduct", link:"/code-of-conduct"},
     {text:"Glossary", link:"/glossary"},
     {text:"About", link:"/about"}
