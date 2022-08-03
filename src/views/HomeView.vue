@@ -24,6 +24,33 @@
     </div>
 
   </div>
+  <div id="announcements" class="pa-5">
+    <v-card color="light-blue-darken">
+      <v-card-title class="bg-dark-blue">Announcements</v-card-title>
+      <v-card-text class="text-h6 font-weight-black pt-5 text-center">
+        <v-row class="pb-4">
+          <v-col cols="12">Interested in playing in a competitive league? Sundays starting at the end of September!</v-col>
+          <v-row>
+            <v-spacer />
+            <v-col cols="10" lg="4" md="4" xl="4">
+              <v-btn rounded color="dark-blue" to="/league">More Info Here</v-btn>
+            </v-col>
+            <v-spacer />
+          </v-row>
+        </v-row>
+        <v-row class="pb-2">
+          <v-col cols="12">Our annual D.U.A.L. Tournament:</v-col>
+            <v-row>
+              <v-spacer />
+              <v-col cols="10" lg="4" md="4" xl="4">
+                <v-btn rounded color="dark-blue" to="/dual-3">More Info Here</v-btn>
+              </v-col>
+              <v-spacer />
+            </v-row>
+        </v-row>
+      </v-card-text>
+    </v-card>
+  </div>
   <v-row class="text-h4 pt-10">
     <v-col>
       <v-btn to="rules" color="light-blue-darken" rounded>Rules</v-btn>
