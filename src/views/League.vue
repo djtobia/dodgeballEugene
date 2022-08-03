@@ -7,8 +7,8 @@
     </div>
     <v-row class="text-left">
       <v-spacer />
-      <v-col cols="12" lg="8" md="8">
-        <div id="when" class="text-h5">When: Sundays from 5-8pm, September 25th-November 6th</div>
+      <v-col cols="12" lg="4" md="4">
+        <div id="when" class="text-h6">When: Sundays from 5-8pm, September 25th-November 6th</div>
         <div id="more-info" class="text-h6">Cost: $40 if registered before August 14th, $45 after!</div>
         <div id="type" class="text-h6">Type: Random Draft</div>
         <div id="ball" class="text-h6">Ball: To Be Determined</div>
