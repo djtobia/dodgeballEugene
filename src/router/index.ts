@@ -1,3 +1,4 @@
+import LeagueVue from "@/views/League.vue";
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 
@@ -36,6 +37,11 @@ const router = createRouter({
       path: "/dual-3",
       name: "DUAL III",
       component: () => import("../views/Dual.vue"),
+    },
+    {
+      path: "/league",
+      name: "League",
+      component: () => import("../views/League.vue"),
     },
   ],
 });
