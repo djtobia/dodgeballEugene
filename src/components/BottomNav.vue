@@ -34,11 +34,10 @@
 .hidden-me {
   position: absolute !important;
   bottom: 15px;
-  right: 45px;
-  height: 50px;
-  width: 50px;
-  opacity: 0;
-  animation: peekaboo 3s linear 10s infinite alternate;
+  right: 70px;
+  height: 45px;
+  width: 45px;
+  animation: peekaboo 3.5s linear 10s infinite alternate;
 }
 
 .mobile {
@@ -46,8 +45,8 @@
 }
 
 @keyframes peekaboo {
-  0%, 30% {bottom: 15px; opacity: 0;}
-  100% {bottom: 47px; opacity: 1;}
+  0%, 90% {bottom: 10px; }
+  100% {bottom: 50px;}
 }
 
 
