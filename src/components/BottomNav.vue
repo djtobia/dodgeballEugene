@@ -33,7 +33,7 @@
 <style>
 .hidden-me {
   position: absolute !important;
-  bottom: 15px;
+  bottom: 10px;
   right: 70px;
   height: 45px;
   width: 45px;
