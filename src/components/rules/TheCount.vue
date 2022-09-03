@@ -21,8 +21,11 @@
     </li>
     <li>
       Intentionally throwing a ball out of bounds not towards an opposing player
-      (bouncing off of high ceiling/basketball rims as well) is considered a delay of game.
-      The ref will stop play and award the non-throwing team the ball.
+      (bouncing off of high ceiling/basketball rims as well), or dumping the ball in front of you, is considered a delay of game.
+      Teams will be given one warning.
+        <ul class="pl-5">
+          <li>After the first warning, The ref will stop play and award the non-throwing team all balls.</li>
+        </ul>
     </li>
     <li>
       Reffing the 10 second count is hard. We recommend one ref be dedicated to this.
