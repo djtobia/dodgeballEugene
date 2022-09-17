@@ -16,7 +16,7 @@
           >
             Dylan Tobia
           </v-btn>
-          <v-img :class="{'hidden-me': true, mobile: smAndDown}"  src="/images/me.png"></v-img>
+          <!-- <v-img :class="{'hidden-me': true, mobile: smAndDown}"  src="/images/me.png"></v-img> -->
         </v-col>
       </v-row>
     </v-col>
@@ -45,8 +45,8 @@
 }
 
 @keyframes peekaboo {
-  0%, 90% {bottom: 10px; }
-  100% {bottom: 50px;}
+  0%, 90% {bottom: 10px; opacity: 0;}
+  100% {bottom: 50px; opacity: 1;}
 }
 
 
