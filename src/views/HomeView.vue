@@ -11,7 +11,20 @@
         <v-spacer />
         <v-col cols="12" lg="4" md="4" class="text-center">
         <div class="text-left">
-          <p class="pa-2">When: Wednesdays 6-8pm at the Bob Keefer Center, Sundays 5-8pm at Sheldon Community Center</p>
+
+          <div>
+            <span class="font-weight-black text-white">When:</span>
+            <ul class="pl-8">
+              <li>
+                Wednesdays 6-8pm at the Bob Keefer Center
+              </li>
+              <li>
+                Select Fridays, 6-8pm at Sheldon Community Center (See Facebook group page or Meetup for more information)
+              </li>
+            </ul>
+
+
+          </div>
           <p class="pa-2 pb-4">For more information, view our <a href="https://www.facebook.com/Dodgeball-Eugene-110959956928427/" target="_blank">Facebook</a> group, or our <a href="https://www.meetup.com/dodgeball-eugene/" target="_blank">Meetup</a>!</p>
         </div>
             <!-- <iframe
