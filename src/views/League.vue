@@ -13,8 +13,72 @@
       </v-col>
       <v-spacer />
     </v-row>
-    <div id="event-page" class="text-h6">
+    <v-row id="standings">
+      <v-spacer />
+
+      <v-col cols="12" lg="6" xl="6">
+        <v-table>
+          <thead>
+            <tr>
+              <th class="text-center">Rank</th>
+              <th class="text-center">Team</th>
+              <th class="text-center">Wins</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="info in teamInfo" :key="info.rank">
+              <td>{{ info.rank }}</td>
+              <td>{{ info.team }}</td>
+              <td>{{ info.wins }}</td>
+            </tr>
+          </tbody>
+        </v-table>
+      </v-col>
+      <v-spacer />
+    </v-row>
+    <div id="event-page" class="text-h6 mt-4">
       Registration is closed
     </div>
   </v-container>
 </template>
+
+<script setup lang="ts">
+  const teamInfo = [
+    {
+      rank: 1,
+      team: "Alex",
+      wins: 10
+    },
+    {
+      rank: 2,
+      team: "Jon",
+      wins: 6.5
+    },
+    {
+      rank: 3,
+      team: "Mark",
+      wins: 6
+    },
+    {
+      rank: 4,
+      team: "Kyle Q",
+      wins: 6
+    },
+    {
+      rank: 5,
+      team: "Dylan",
+      wins: 5.5
+    },
+    {
+      rank: 6,
+      team: "Barb",
+      wins: 4.5
+    },
+    {
+      rank: 7,
+      team: "Eric",
+      wins: 3.5
+    }
+  ]
+
+</script>
