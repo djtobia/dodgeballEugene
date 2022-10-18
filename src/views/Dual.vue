@@ -1,7 +1,13 @@
 <template>
   <v-container class="text-center text-light-blue">
     <h1 class="text-h2 font-weight-bold">D.U.A.L. III</h1>
-
+    <v-container id="logo">
+      <v-row >
+        <v-spacer />
+        <v-img src="/images/dual3.png" max-width="450px" width="250px" class="ma-0" alt="DUAL 3 logo"></v-img>
+        <v-spacer />
+      </v-row>
+    </v-container>
     <div id="about" class="py-3 text-h5">
       <p class="font-weight-bold pb-4">Our annual Dodgeball Unity and Love Tournament is back!</p>
     </div>
@@ -18,5 +24,6 @@
           Register here!
       </a>
     </div>
+    <h6 class="mt-10">DUAL logo created by <a href="https://www.instagram.com/vmarchbanks/">Vince Marchbanks</a></h6>
   </v-container>
 </template>
