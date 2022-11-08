@@ -36,6 +36,10 @@
       </v-col>
       <v-spacer />
     </v-row>
+    <h3 class="mt-2">Congatulations to Team Alex for winning our fall 2020 3's league!</h3>
+    <v-row v-for="image in images" :key="image" class="mt-5">
+      <v-img :src="image"></v-img>
+    </v-row>
     <div id="event-page" class="text-h6 mt-4">
       Registration is closed
     </div>
@@ -43,42 +47,55 @@
 </template>
 
 <script setup lang="ts">
+  import { ref } from "vue";
   const teamInfo = [
     {
       rank: 1,
       team: "Alex",
-      wins: 10
+      wins: 22.5
     },
     {
       rank: 2,
       team: "Jon",
-      wins: 6.5
+      wins: 19.5
     },
     {
       rank: 3,
-      team: "Mark",
-      wins: 6
+      team: "Dylan",
+      wins: 15
     },
     {
       rank: 4,
-      team: "Kyle Q",
-      wins: 6
+      team: "Barb",
+      wins: 15
     },
     {
       rank: 5,
-      team: "Dylan",
-      wins: 5.5
+      team: "Mark",
+      wins: 15
     },
     {
       rank: 6,
-      team: "Barb",
-      wins: 4.5
+      team: "Kyle Q.",
+      wins: 12
     },
     {
       rank: 7,
       team: "Eric",
-      wins: 3.5
+      wins: 6
     }
   ]
+
+  const images = ref<string[]>([]);
+
+  fetch("/imageNames.json")
+    .then(data => data.json())
+    .then(data => {
+
+      for(let image of data.images) {
+        images.value.push(image);
+      }
+
+    });
 
 </script>
