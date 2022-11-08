@@ -36,7 +36,7 @@
       </v-col>
       <v-spacer />
     </v-row>
-    <h3 class="mt-2">Congatulations to Team Alex for winning our fall 2020 3's league!</h3>
+    <h3 class="mt-2">Congatulations to Team Alex for winning our fall 2022 3's league!</h3>
     <v-row v-for="image in images" :key="image" class="mt-5">
       <v-img :src="image"></v-img>
     </v-row>
