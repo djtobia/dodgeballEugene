@@ -19,11 +19,10 @@
                 Wednesdays 6-8pm at the Bob Keefer Center
               </li>
               <li>
-                Select Fridays, 6-8pm at Sheldon Community Center (See Facebook group page or Meetup for more information)
+                Select Fridays, 6-8pm at Sheldon Community Center
               </li>
+              <li>Sundays, 5-7pm at Sheldon Community Center</li>
             </ul>
-
-
           </div>
           <p class="pa-2 pb-4">For more information, view our <a href="https://www.facebook.com/Dodgeball-Eugene-110959956928427/" target="_blank">Facebook</a> group, or our <a href="https://www.meetup.com/dodgeball-eugene/" target="_blank">Meetup</a>!</p>
         </div>
@@ -38,24 +37,7 @@
       <v-card-title class="bg-dark-blue">Announcements</v-card-title>
       <v-card-text class="text-h6 font-weight-black pt-5 text-center">
         <v-row class="pb-4">
-          <v-col cols="12">Interested in playing in a competitive league? Sundays starting at the end of September!</v-col>
-          <v-row>
-            <v-spacer />
-            <v-col cols="10" lg="4" md="4" xl="4">
-              <v-btn rounded color="dark-blue" to="/league">More Info Here</v-btn>
-            </v-col>
-            <v-spacer />
-          </v-row>
-        </v-row>
-        <v-row class="pb-2">
-          <v-col cols="12">Our annual D.U.A.L. Tournament:</v-col>
-            <v-row>
-              <v-spacer />
-              <v-col cols="10" lg="4" md="4" xl="4">
-                <v-btn rounded color="dark-blue" to="/dual-3">More Info Here</v-btn>
-              </v-col>
-              <v-spacer />
-            </v-row>
+          <v-col cols="12">Open dodgeball for the rest of the year! League and possibly DUAL IV sometime next year! Happy Holidays!</v-col>
         </v-row>
       </v-card-text>
     </v-card>
