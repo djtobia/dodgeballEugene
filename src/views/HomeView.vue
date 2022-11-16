@@ -39,6 +39,12 @@
         <v-row class="pb-4">
           <v-col cols="12">Open dodgeball for the rest of the year! League and possibly DUAL IV sometime next year! Happy Holidays!</v-col>
         </v-row>
+        <v-row>
+          <v-col cols="12"><h3>Congrats to our DUAL III Champions, Team George!</h3></v-col>
+          <v-col cols="12">
+            <v-img src="/images/dual/dual-champs.png" alt="Dual Champs, Team George!"></v-img>
+          </v-col>
+        </v-row>
       </v-card-text>
     </v-card>
   </div>
