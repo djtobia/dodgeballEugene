@@ -16,12 +16,9 @@
             <span class="font-weight-black text-white">When:</span>
             <ul class="pl-8">
               <li>
-                Wednesdays 6-8pm at the Bob Keefer Center
+                Wednesdays 6:30-8:30pm at the Bob Keefer Center in Springfield
               </li>
-              <li>
-                Select Fridays, 6-8pm at Sheldon Community Center
-              </li>
-              <li>Sundays, 5-7pm at Sheldon Community Center</li>
+              <li>Sundays, 5-7pm at Sheldon Community Center in Eugene</li>
             </ul>
           </div>
           <p class="pa-2 pb-4">For more information, view our <a href="https://www.facebook.com/Dodgeball-Eugene-110959956928427/" target="_blank">Facebook</a> group, or our <a href="https://www.meetup.com/dodgeball-eugene/" target="_blank">Meetup</a>!</p>
@@ -37,7 +34,7 @@
       <v-card-title class="bg-dark-blue">Announcements</v-card-title>
       <v-card-text class="text-h6 font-weight-black pt-5 text-center">
         <v-row class="pb-4">
-          <v-col cols="12">Open dodgeball for the rest of the year! League and possibly DUAL IV sometime next year! Happy Holidays!</v-col>
+          <v-col cols="12">Weekly open dodgeball until we feel like doing something else!</v-col>
         </v-row>
         <v-row>
           <v-col cols="12"><h3>Congrats to our DUAL III Champions, Team George!</h3></v-col>
