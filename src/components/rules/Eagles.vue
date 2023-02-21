@@ -22,5 +22,9 @@
       initiates contact with the eagler, the opposing player is out, and the eagler gets a safe return to
       their side.
     </li>
+    <li>
+      No action may be taken upon the thrown ball by the eagling player, meaning they cannot swat the ball
+      to the ground before it can be caught.
+    </li>
   </ul>
 </template>

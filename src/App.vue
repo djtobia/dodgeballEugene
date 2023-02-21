@@ -1,5 +1,7 @@
 <template>
   <v-app>
+    <!-- span with "dodgeball eugene" for web crawlers to find the home page -->
+    <span style="display: none">Dodgeball Eugene</span>
     <MainNav />
     <v-main>
       <v-container fluid>
