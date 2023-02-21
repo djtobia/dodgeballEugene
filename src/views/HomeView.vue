@@ -16,7 +16,7 @@
             <span class="font-weight-black text-white">When:</span>
             <ul class="pl-8">
               <li>
-                Wednesdays 6:30-8:30pm at the Bob Keefer Center in Springfield
+                Wednesdays 6:00-8:00pm at the Bob Keefer Center in Springfield
               </li>
               <li>Sundays, 5-7pm at Sheldon Community Center in Eugene</li>
             </ul>
