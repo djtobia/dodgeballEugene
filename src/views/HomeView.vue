@@ -18,7 +18,7 @@
               <li>
                 Wednesdays 6:00-8:00pm at the Bob Keefer Center in Springfield
               </li>
-              <li>Sundays, 5-7pm at Sheldon Community Center in Eugene</li>
+              <li>Sundays, 5:00-7:00pm at Sheldon Community Center in Eugene</li>
             </ul>
           </div>
           <p class="pa-2 pb-4">For more information, view our <a href="https://www.facebook.com/Dodgeball-Eugene-110959956928427/" target="_blank">Facebook</a> group, or our <a href="https://www.meetup.com/dodgeball-eugene/" target="_blank">Meetup</a>!</p>
