@@ -1,7 +1,7 @@
 <template>
   <v-container class="text-light-blue">
     <v-row align-content="center">
-      <v-col cols="6">
+      <v-col cols="4">
         <v-row class="text-center pa-0 ma-0">
           <v-col cols="12" class="pa-0">
             <a href="https://www.facebook.com/groups/dodgeballeugene" target="_blank">
@@ -13,7 +13,17 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-col cols="6">
+      <v-col cols="4">
+        <v-row class="text-center pa-0 ma-0">
+          <v-col cols="12" class="pa-0">
+            <a href="mailto:dodgeballeugene@gmail.com?subject=Contact from DodgeballEugene.org">
+              <v-img src="images/gmail.png" alt="gmail logo" max-height="50"></v-img>
+            </a>
+          </v-col>
+          <v-col cols="12" class="pa-0">Send us an email!</v-col>
+        </v-row>
+      </v-col>
+      <v-col cols="4">
         <v-row class="text-center pa-0 ma-0">
           <v-col cols="12" class="pa-0">
             <a href="https://www.meetup.com/dodgeball-eugene/" target="_blank">
