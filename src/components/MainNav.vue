@@ -12,10 +12,10 @@
       <v-list-item v-for="link in links" :id="`${link.text}-sidebar`"><v-btn flat :to="link.link" class="text-light-blue">{{link.text}}</v-btn></v-list-item>
     </v-list>
   </v-navigation-drawer>
-  <v-banner v-if="false" class="my-16 font-weight-bold bg-red-darken-4" :min-height="smAndDown ? '180' : '75'">
+  <v-banner class="my-16 font-weight-bold bg-red-darken-4" :min-height="smAndDown ? '180' : '75'">
     <v-banner-text>
-      URGENT: We are looking for a new gym to play our open dodgeball during the week. August 24th, 2022, will be our last Wednesday night at Sheldon Community Center
-      (We will still have Sunday nights for the time being). If you or anyone you know has any tips on a gym we could rent during the week, please contact us at
+      URGENT: We are looking for a new gym to play our open dodgeball during the weekend. June 4th, 2023, will be our last Sunday night at Sheldon Community Center
+      If you or anyone you know has any tips on a gym we could rent, please contact us at
       <a
         href="mailto:dodgeballeugene@gmail.com"
         class="text-dark-blue font-weight-black"
@@ -33,7 +33,7 @@ import { useDisplay } from 'vuetify';
 const links = [
     {text:"Home", link:"/"},
     {text:"Rules", link:"/rules"},
-    {text:"D.U.A.L. III", link: "/dual-3"},
+    {text:"D.U.A.L.", link: "/dual"},
     {text:"League", link: "/league"},
     {text:"Code of Conduct", link:"/code-of-conduct"},
     {text:"Glossary", link:"/glossary"},
