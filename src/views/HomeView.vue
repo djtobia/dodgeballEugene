@@ -34,7 +34,7 @@
       <v-card-title class="bg-dark-blue">Announcements</v-card-title>
       <v-card-text class="text-h6 font-weight-black pt-5 text-center">
         <v-row class="pb-4">
-          <v-col cols="12"><h2>DUAL IV registration is open! See <a href="/dual">here</a> for more information.</h2></v-col>
+          <v-col cols="12" class="large-announcement"><h2>DUAL IV registration is open! See <a href="/dual">here</a> for more information.</h2></v-col>
         </v-row>
         <v-row>
           <v-col cols="12"><h3>Congrats to our DUAL III Champions, Team George!</h3></v-col>
@@ -55,3 +55,9 @@
   </v-row>
   <v-img src="/images/d-eugene-transparent.png" class="pt-10"></v-img>
 </template>
+
+<style scoped>
+.large-announcement {
+  line-height: normal;
+}
+</style>
