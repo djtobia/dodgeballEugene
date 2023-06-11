@@ -13,7 +13,7 @@
     </div>
     <div id="when" class="text-h5">When: June 17th, 2023</div>
     <div id="more-info" class="text-h6">7" Foam, draft style tournament!</div>
-    <div id="registration" class="text-h6"><a href="https://docs.google.com/forms/d/1jjz-5M3KOBRUHK54MvTYOSwAHDPcb2zpyAKDtVMjvhg/edit?fbclid=IwAR2OIdvdXL2IMLHpgaT9r_OgZQC6ojKhkC0ItkEUK4jevPVphR8lCaV3iGs">Register here</a></div>
+    <div id="registration" class="text-h6">Registration is closed! Good luck to our participants, see you June 17th!</div>
     <div id="event-page" class="text-h6">
       <h3 class="ma-5">Congrats to the DUAL III Champions, Team George!</h3>
       <v-img src="/images/dual/dual-champs.png" alt="Dual Champs, Team George!" class="mt-5" />

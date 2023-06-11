@@ -33,6 +33,7 @@ import { useDisplay } from 'vuetify';
 const links = [
     {text:"Home", link:"/"},
     {text:"Rules", link:"/rules"},
+    {text: "Open Gym Schedlue", link:"/schedule"},
     {text:"D.U.A.L.", link: "/dual"},
     {text:"League", link: "/league"},
     {text:"Code of Conduct", link:"/code-of-conduct"},
