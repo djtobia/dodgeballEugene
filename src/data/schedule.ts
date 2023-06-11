@@ -1,9 +1,28 @@
-
-
 interface Schedule {
   sunday: boolean;
   date: Date;
+  today?: boolean
 }
+
+const checkIfPassed = (date: Date) => {
+  const today = new Date();
+  return today > date;
+}
+
+
+const checkIfToday = (date: Date) => {
+  const today = new Date();
+  const day = today.getDay();
+  const month = today.getMonth();
+  const year  = today.getFullYear();
+
+  const compareDay = date.getDay();
+  const compareMonth = date.getMonth();
+  const compareYear = date.getFullYear();
+
+  return day === compareDay && month === compareMonth && year === compareYear;
+}
+// self updating schedule for now. Will figure out how to update this via google sheet or something later
 const schedule: Schedule[] = [
   {
     sunday: false,
@@ -50,19 +69,12 @@ const schedule: Schedule[] = [
     sunday: true,
     date: new Date(2023, 6, 30, 17)
   },
-];
+].filter(date => !checkIfPassed(date.date)).map(date => {
+  return {sunday: date.sunday,
+  date: date.date,
+  today: checkIfToday(date.date)}
+});
 // no 2nd or 25th of july
 
-const checkIfToday = (date: Date) => {
-  const today = new Date();
-  const day = today.getDay();
-  const month = today.getMonth();
-  const year  = today.getFullYear();
 
-  const compareDay = date.getDay();
-  const compareMonth = date.getMonth();
-  const compareYear = date.getFullYear();
-
-  return day === compareDay && month === compareMonth && year === compareYear;
-}
-export { schedule, checkIfToday };
+export { schedule, checkIfToday, checkIfPassed };
