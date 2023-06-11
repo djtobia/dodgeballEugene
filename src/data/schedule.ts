@@ -12,11 +12,11 @@ const checkIfPassed = (date: Date) => {
 
 const checkIfToday = (date: Date) => {
   const today = new Date();
-  const day = today.getDay();
+  const day = today.getDate();
   const month = today.getMonth();
   const year  = today.getFullYear();
 
-  const compareDay = date.getDay();
+  const compareDay = date.getDate();
   const compareMonth = date.getMonth();
   const compareYear = date.getFullYear();
 
