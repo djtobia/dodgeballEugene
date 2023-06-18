@@ -1,7 +1,8 @@
 interface Schedule {
   sunday: boolean;
   date: Date;
-  today?: boolean
+  today?: boolean;
+  cancelled?: boolean;
 }
 
 const checkIfPassed = (date: Date) => {
@@ -30,7 +31,8 @@ const schedule: Schedule[] = [
   },
   {
     sunday: true,
-    date: new Date(2023, 5, 18, 17)
+    date: new Date(2023, 5, 18, 17),
+    cancelled: true,
   },{
     sunday: false,
     date: new Date(2023, 5, 21, 18)
@@ -72,7 +74,9 @@ const schedule: Schedule[] = [
 ].filter(date => !checkIfPassed(date.date)).map(date => {
   return {sunday: date.sunday,
   date: date.date,
-  today: checkIfToday(date.date)}
+  today: checkIfToday(date.date),
+  cancelled: date.cancelled
+}
 });
 // no 2nd or 25th of july
 
