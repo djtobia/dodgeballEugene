@@ -39,7 +39,8 @@ const schedule: Schedule[] = [
   },
   {
     sunday: true,
-    date: new Date(2023, 5, 25, 17)
+    date: new Date(2023, 5, 25, 17),
+    cancelled: true
   },
   {
     sunday: false,
