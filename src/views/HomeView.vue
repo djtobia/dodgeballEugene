@@ -24,15 +24,9 @@
               <span class="pa-2">For our full open gym schedule, go <router-link to="/schedule">Here</router-link></span>
               <p class="pa-2 pb-4">
                 For more information, view our
-                <a
-                  href="https://www.facebook.com/Dodgeball-Eugene-110959956928427/"
-                  target="_blank"
-                  >Facebook</a
-                >
+                <a href="https://www.facebook.com/Dodgeball-Eugene-110959956928427/" target="_blank">Facebook</a>
                 group, or our
-                <a
-                  href="https://www.meetup.com/dodgeball-eugene/"
-                  target="_blank">Meetup</a>!
+                <a href="https://www.meetup.com/dodgeball-eugene/" target="_blank">Meetup</a>!
               </p>
             </div>
           </div>
@@ -46,25 +40,16 @@
       <v-card-title class="bg-dark-blue">Announcements</v-card-title>
       <v-card-text class="text-h6 font-weight-black pt-5 text-center">
         <v-row class="pb-4">
-<<<<<<< HEAD
-          <v-col cols="12"
-            >Weekly open dodgeball until we feel like doing something
-            else!</v-col
-          >
-=======
-          <v-col cols="12" class="large-announcement"><h2>DUAL IV is happening on June 17th! See <a href="/dual">here</a> for more information.</h2></v-col>
->>>>>>> master
+          <v-col cols="12">Weekly open dodgeball until we feel like doing something
+            else!</v-col>
         </v-row>
         <v-row>
-          <v-col cols="12"
-            ><h3>Congrats to our DUAL III Champions, Team George!</h3></v-col
-          >
           <v-col cols="12">
-            <v-img
-              v-if="assets?.items?.length"
-              :src="assets.items[0].fields.file.url"
-              alt="Dual Champs, Team George!"
-            ></v-img>
+            <h3>Congrats to our DUAL IV Champions, School of Hard Blocks!</h3>
+          </v-col>
+          <v-col cols="12">
+            <v-img v-if="assets?.items?.length" :src="assets.items[0].fields.file.url"
+              alt="Dual Champs, School of Hard Blocks!"></v-img>
           </v-col>
         </v-row>
       </v-card-text>
@@ -75,19 +60,13 @@
       <v-btn to="rules" color="light-blue-darken" rounded>Rules</v-btn>
     </v-col>
     <v-col>
-      <v-btn to="code-of-conduct" color="light-blue-darken" rounded
-        >Code of Conduct</v-btn
-      >
+      <v-btn to="code-of-conduct" color="light-blue-darken" rounded>Code of Conduct</v-btn>
     </v-col>
   </v-row>
-  <v-img
-    v-if="assets?.items?.length"
-    :src="assets.items[1].fields.file.url"
-    class="pt-10"
-  ></v-img>
+  <v-img v-if="assets?.items?.length" :src="assets.items[1].fields.file.url" class="pt-10"
+    alt="Some members of Dodgeball Eugene"></v-img>
 </template>
 
-<<<<<<< HEAD
 <script setup lang="ts">
 import { inject, ref } from "vue";
 import type { AssetCollection, ContentfulClientApi } from "contentful";
@@ -95,13 +74,11 @@ import contentful from "@/helpers";
 const client = inject(contentful) as ContentfulClientApi;
 const assets = ref({} as AssetCollection);
 assets.value = await client.getAssets({
-  "metadata.tags.sys.id[in]": "transparentAll,dual3Champs",
+  "metadata.tags.sys.id[in]": "transparentAll,dual4Champs",
 });
 </script>
-=======
 <style scoped>
 .large-announcement {
   line-height: normal;
 }
 </style>
->>>>>>> master
