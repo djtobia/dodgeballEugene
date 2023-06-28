@@ -17,6 +17,7 @@
     </li>
     <li>A player that is hit mid-eagle is out as soon as they are hit.</li>
     <li>A ball thrown by the eagler is only valid if thrown before they were hit.</li>
+    <li>If a ball is thrown and a "line violation" is called (resulting in the eagler being out), but the ball is caught, that is still a valid catch.</li>
     <li>
       If an eagling player initiates contact with an opposing player, they are out. If an opposing player
       initiates contact with the eagler, the opposing player is out, and the eagler gets a safe return to

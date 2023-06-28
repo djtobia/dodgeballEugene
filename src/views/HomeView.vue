@@ -19,23 +19,22 @@
                 <li>
                   Wednesdays 6:00-8:00pm at the Bob Keefer Center in Springfield
                 </li>
-                <li>
-                  Sundays, 5:00-7:00pm at Sheldon Community Center in Eugene
-                </li>
+                <li>Sundays, 5:00-7:00pm at the Bob Keefer Centir in Springfield</li>
               </ul>
+              <span class="pa-2">For our full open gym schedule, go <router-link to="/schedule">Here</router-link></span>
+              <p class="pa-2 pb-4">
+                For more information, view our
+                <a
+                  href="https://www.facebook.com/Dodgeball-Eugene-110959956928427/"
+                  target="_blank"
+                  >Facebook</a
+                >
+                group, or our
+                <a
+                  href="https://www.meetup.com/dodgeball-eugene/"
+                  target="_blank">Meetup</a>!
+              </p>
             </div>
-            <p class="pa-2 pb-4">
-              For more information, view our
-              <a
-                href="https://www.facebook.com/Dodgeball-Eugene-110959956928427/"
-                target="_blank"
-                >Facebook</a
-              >
-              group, or our
-              <a href="https://www.meetup.com/dodgeball-eugene/" target="_blank"
-                >Meetup</a
-              >!
-            </p>
           </div>
         </v-col>
         <v-spacer />
@@ -47,10 +46,14 @@
       <v-card-title class="bg-dark-blue">Announcements</v-card-title>
       <v-card-text class="text-h6 font-weight-black pt-5 text-center">
         <v-row class="pb-4">
+<<<<<<< HEAD
           <v-col cols="12"
             >Weekly open dodgeball until we feel like doing something
             else!</v-col
           >
+=======
+          <v-col cols="12" class="large-announcement"><h2>DUAL IV is happening on June 17th! See <a href="/dual">here</a> for more information.</h2></v-col>
+>>>>>>> master
         </v-row>
         <v-row>
           <v-col cols="12"
@@ -84,6 +87,7 @@
   ></v-img>
 </template>
 
+<<<<<<< HEAD
 <script setup lang="ts">
 import { inject, ref } from "vue";
 import type { AssetCollection, ContentfulClientApi } from "contentful";
@@ -94,3 +98,10 @@ assets.value = await client.getAssets({
   "metadata.tags.sys.id[in]": "transparentAll,dual3Champs",
 });
 </script>
+=======
+<style scoped>
+.large-announcement {
+  line-height: normal;
+}
+</style>
+>>>>>>> master

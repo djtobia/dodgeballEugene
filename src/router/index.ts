@@ -33,8 +33,8 @@ const router = createRouter({
       component: () => import("../views/Glossary.vue"),
     },
     {
-      path: "/dual-3",
-      name: "DUAL III",
+      path: "/dual",
+      name: "DUAL",
       component: () => import("../views/Dual.vue"),
     },
     {
@@ -42,6 +42,11 @@ const router = createRouter({
       name: "League",
       component: () => import("../views/League.vue"),
     },
+    {
+      path: "/schedule",
+      name: "Schedule",
+      component: () => import("../views/Schedule.vue"),
+    }
   ],
 });
 
