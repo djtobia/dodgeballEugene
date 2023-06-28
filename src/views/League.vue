@@ -2,7 +2,7 @@
   <v-container class="text-center text-light-blue">
     <h1 class="text-h2 font-weight-bold">Fall League</h1>
     <div id="about" class="py-3 text-h5"></div>
-    <v-row class="text-left">
+    <!-- <v-row class="text-left">
       <v-spacer />
       <v-col cols="12" lg="4" md="4">
         <div id="when" class="text-h6">
@@ -15,7 +15,7 @@
         <div id="ball" class="text-h6">Ball: 7" Foam</div>
       </v-col>
       <v-spacer />
-    </v-row>
+    </v-row> -->
 
     <h3 class="mt-2">
       Congatulations to Team Alex for winning our fall 2022 3's league!
