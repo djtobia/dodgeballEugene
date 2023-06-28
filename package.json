@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
+    "contentful": "^9.3.5",
     "firebase": "^9.9.1",
     "roboto-fontface": "*",
     "vue": "^3.2.37",
