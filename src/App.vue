@@ -6,11 +6,7 @@
       <MainNav />
       <v-main>
         <v-container fluid>
-          <v-img
-            src="images/dodgeball-eugene-logo.png"
-            alt="Dodgeball Eugene Logo"
-            max-height="300"
-          ></v-img>
+          <v-img src="images/dodgeball-eugene-logo.png" alt="Dodgeball Eugene Logo" max-height="300"></v-img>
           <router-view />
         </v-container>
       </v-main>
@@ -30,11 +26,13 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { createClient } from "contentful";
 import contentful from "./helpers";
+import { startSheets } from "./utility/googleSheetAPI";
 const route = useRoute();
 watch(route, () => {
   window.scroll(0, 0);
 });
-onMounted(async () => {
+onMounted(() => {
+  gapi.load("client", startSheets);
   const firebaseConfig = {
     apiKey: "AIzaSyCKYjjaBuJz3kWj83adJUdu_icRYrJ1D20",
     authDomain: "dodgeball-eugene.firebaseapp.com",

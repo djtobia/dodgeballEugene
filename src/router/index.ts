@@ -45,7 +45,7 @@ const router = createRouter({
     {
       path: "/schedule",
       name: "Schedule",
-      component: () => import("../views/Schedule.vue"),
+      component: () => import("../views/SchedulePage.vue"),
     }
   ],
 });
