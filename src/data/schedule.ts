@@ -1,4 +1,4 @@
-import { getDataFromGoogleSheet } from "@/utility/googleSheetAPI";
+import getDataFromGoogleSheet from "@/utility/googleSheetAPI";
 import type { Schedule } from "@/interfaces/scheduleInterface";
 const checkIfPassed = (date: Date) => {
   const today = new Date();

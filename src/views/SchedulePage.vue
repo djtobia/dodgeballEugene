@@ -24,7 +24,7 @@ import { getData } from "@/data/schedule";
 import type { Schedule } from "@/interfaces/scheduleInterface";
 import { onMounted, ref } from "vue";
 const dates = ref([] as Schedule[]);
-onMounted(() => {
+onMounted(async () => {
   getData().then((data) => {
     data.forEach((date) => dates.value.push(date));
   });

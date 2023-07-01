@@ -26,13 +26,11 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { createClient } from "contentful";
 import contentful from "./helpers";
-import { startSheets } from "./utility/googleSheetAPI";
 const route = useRoute();
 watch(route, () => {
   window.scroll(0, 0);
 });
 onMounted(() => {
-  gapi.load("client", startSheets);
   const firebaseConfig = {
     apiKey: "AIzaSyCKYjjaBuJz3kWj83adJUdu_icRYrJ1D20",
     authDomain: "dodgeball-eugene.firebaseapp.com",
