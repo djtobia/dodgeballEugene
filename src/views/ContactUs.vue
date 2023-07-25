@@ -8,7 +8,7 @@
       <v-row justify="center" class="mt-3 mb-5">
         <Checkbox theme="dark" v-model="isNotRobot" />
       </v-row>
-      <v-btn type="submit" block :disabled="isNotRobot === ''">Submit!</v-btn>
+      <v-btn type="submit" block :disabled="isNotRobot === ''" :loading="sending">Submit!</v-btn>
     </v-form>
   </v-container>
 </template>
@@ -28,6 +28,7 @@ const recipientEmail = ref("");
 const name = ref("");
 const text = ref("");
 const cleanForm = ref(false);
+const sending = ref(false);
 const rules = {
   nameRules: [
     (value: string) => {
@@ -55,13 +56,11 @@ const rules = {
 };
 
 const sendEmail = async () => {
-
-
   if (cleanForm.value) {
     try {
       const functions = getFunctions();
-      connectFunctionsEmulator(functions, "127.0.0.1", 5001);
       const sendEmailFunction = httpsCallable(functions, "sendEmail");
+      sending.value = true;
       const result = await sendEmailFunction({
         recipientEmail: recipientEmail.value,
         name: name.value,
@@ -70,6 +69,10 @@ const sendEmail = async () => {
       if (!result.data.success) {
         console.error("There was an error sending an email.");
       }
+      sending.value = false;
+      recipientEmail.value = "";
+      name.value = "";
+      text.value = "";
     } catch (error) {
       console.log("error:", error);
     }
