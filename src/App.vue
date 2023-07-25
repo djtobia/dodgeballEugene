@@ -17,6 +17,7 @@
 </template>
 
 <script setup lang="ts">
+import { useRecaptchaProvider } from "vue-recaptcha";
 import MainNav from "@/components/MainNav.vue";
 import SocialLinks from "@/components/SocialLinks.vue";
 import BottomNav from "@/components/BottomNav.vue";
@@ -44,6 +45,7 @@ onMounted(() => {
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
+  useRecaptchaProvider();
 });
 
 const space = import.meta.env.VITE_SPACE_ID;
