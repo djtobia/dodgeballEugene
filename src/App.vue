@@ -61,3 +61,9 @@ li {
   padding-top: 15px;
 }
 </style>
+
+<style scoped>
+.z-100 {
+  z-index: 100;
+}
+</style>

@@ -15,19 +15,39 @@
           <div class="text-left">
             <div>
               <span class="font-weight-black text-white">When:</span>
-              <ul class="pl-8">
+              <ul class="pl-8 pr-0">
                 <li>
                   Wednesdays 6:00-8:00pm at the Bob Keefer Center in Springfield
                 </li>
-                <li>Sundays, 5:00-7:00pm at the Bob Keefer Centir in Springfield</li>
+                <li>
+                  Sundays, 5:00-7:00pm at the Bob Keefer Center in Springfield
+                </li>
               </ul>
-              <span class="pa-2">For our full open gym schedule, go <router-link to="/schedule">Here</router-link></span>
-              <p class="pa-2 pb-4">
-                For more information, view our
-                <a href="https://www.facebook.com/Dodgeball-Eugene-110959956928427/" target="_blank">Facebook</a>
-                group, or our
-                <a href="https://www.meetup.com/dodgeball-eugene/" target="_blank">Meetup</a>!
-              </p>
+              <v-container>
+                <v-row>
+                  <span class="pa-2">For our full open gym schedule, go
+                    <router-link to="/schedule">Here</router-link></span>
+                </v-row>
+              </v-container>
+
+              <v-container>
+                <v-row>
+                  <p class="pa-2 pb-4">
+                    For more information, view our
+                    <a href="https://www.facebook.com/Dodgeball-Eugene-110959956928427/" target="_blank">Facebook</a>
+                    group, or our
+                    <a href="https://www.meetup.com/dodgeball-eugene/" target="_blank">Meetup</a>
+                  </p>
+                </v-row>
+              </v-container>
+
+              <v-container>
+                <v-row>
+                  <div>
+                    Or send us an email, <router-link to="/contact">Here!</router-link>
+                  </div>
+                </v-row>
+              </v-container>
             </div>
           </div>
         </v-col>
@@ -35,7 +55,7 @@
       </v-row>
     </div>
   </div>
-  <div id="announcements" class="pa-5">
+  <div id="announcements" class="pa-5 normal-z">
     <v-card color="light-blue-darken">
       <v-card-title class="bg-dark-blue">Announcements</v-card-title>
       <v-card-text class="text-h6 font-weight-black pt-5 text-center">
@@ -64,13 +84,17 @@
     </v-col>
   </v-row>
   <v-img v-if="assets?.items?.length" :src="assets.items[1].fields.file.url" class="pt-10"
-    alt="Some members of Dodgeball Eugene"></v-img>
+    alt="Some members of Dodgeball Eugene" />
+  <v-container>
+    <v-btn to="/contact" block color="light-blue-darken" rounded>Contact Us!</v-btn>
+  </v-container>
 </template>
 
 <script setup lang="ts">
 import { inject, ref } from "vue";
 import type { AssetCollection, ContentfulClientApi } from "contentful";
 import contentful from "@/helpers";
+
 const client = inject(contentful) as ContentfulClientApi;
 const assets = ref({} as AssetCollection);
 assets.value = await client.getAssets({
@@ -78,6 +102,10 @@ assets.value = await client.getAssets({
 });
 </script>
 <style scoped>
+.normal-z {
+  z-index: -1;
+}
+
 .large-announcement {
   line-height: normal;
 }
