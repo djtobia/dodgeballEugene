@@ -15,7 +15,6 @@ import { ref } from "vue";
 import {
   getFunctions,
   httpsCallable,
-  connectFunctionsEmulator,
 } from "firebase/functions";
 const recipientEmail = ref("");
 const name = ref("");
@@ -51,7 +50,6 @@ const sendEmail = async () => {
   if (cleanForm.value) {
     try {
       const functions = getFunctions();
-      connectFunctionsEmulator(functions, "127.0.0.1", 5001);
       const sendEmailFunction = httpsCallable(functions, "sendEmail");
       const result = await sendEmailFunction({
         recipientEmail: recipientEmail.value,
