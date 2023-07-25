@@ -18,7 +18,6 @@
 
 <script setup lang="ts">
 import { useRecaptchaProvider } from "vue-recaptcha";
-import { createHead } from "@unhead/vue";
 import MainNav from "@/components/MainNav.vue";
 import SocialLinks from "@/components/SocialLinks.vue";
 import BottomNav from "@/components/BottomNav.vue";
@@ -46,7 +45,6 @@ onMounted(() => {
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
-  createHead();
   useRecaptchaProvider();
 });
 
