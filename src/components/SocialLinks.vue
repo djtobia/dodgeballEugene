@@ -6,11 +6,8 @@
           <v-spacer />
           <v-col class="pa-0" cols="6">
             <a :href="asset.fields.description.split('||')[2]">
-              <v-img
-                :src="asset.fields.file.url"
-                max-height="50"
-                :alt="asset.fields.description.split('||')[1]"
-              ></v-img>
+              <v-img :src="asset.fields.file.url" max-height="50" min-height="50"
+                :alt="asset.fields.description.split('||')[1]"></v-img>
             </a>
           </v-col>
           <v-spacer />

@@ -12,13 +12,14 @@
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "@firebase/functions": "^0.10.0",
     "@mdi/font": "5.9.55",
     "contentful": "^9.3.5",
-    "firebase": "^9.9.1",
+    "firebase": "^10.1.0",
     "roboto-fontface": "*",
     "vue": "^3.2.37",
     "vue-router": "^4.1.2",
-    "vuetify": "^3.0.0-beta.0",
+    "vuetify": "^3.3.9",
     "webfontloader": "^1.0.0"
   },
   "devDependencies": {
