@@ -35,6 +35,7 @@ const links = [
   { text: "Open Gym Schedule", link: "/schedule" },
   { text: "D.U.A.L.", link: "/dual" },
   { text: "League", link: "/league" },
+  { text: "Helpful videos", link: "/videos" },
   { text: "Code of Conduct", link: "/code-of-conduct" },
   { text: "Glossary", link: "/glossary" },
   { text: "About", link: "/about" },
