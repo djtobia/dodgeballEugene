@@ -52,6 +52,11 @@ const router = createRouter({
       name: "Contact",
       component: () => import("../views/ContactUs.vue"),
     },
+    {
+      path: "/videos",
+      name: "Videos",
+      component: () => import("../views/HelpfulVideos.vue"),
+    }
   ],
 });
 

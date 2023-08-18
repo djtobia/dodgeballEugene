@@ -1,5 +1,6 @@
 <template>
   <v-container>
+    <div class="text-light-blue text-h2 font-weight-bold mb-2 text-center">Contact Us</div>
     <v-form @submit.prevent="sendEmail" validate-on="submit" v-model="cleanForm">
       <v-text-field v-model="recipientEmail" placeholder="Email" required validate-on="submit"
         :rules="rules.emailRules" />
