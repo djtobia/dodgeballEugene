@@ -4,17 +4,17 @@
     <div id="about" class="py-3 text-h5"></div>
     <v-row class="text-left">
       <v-spacer />
-      <v-col cols="12" lg="12" md="12">
-        <div id="when" class="text-h6">
+      <v-col cols="12" lg="12" md="12" class="text-h6">
+        <div id="when" class="my-2">
           <span class="font-weight-bold text-h5">When:</span> Sundays from 5-7pm, September 24th-November 5th
         </div>
-        <div id="more-info" class="text-h6">
+        <div id="more-info" class="my-2">
           <span class="font-weight-bold text-h5">Cost:</span> $40!
         </div>
-        <div id="type" class="text-h6"><span class="font-weight-bolt text-h5">Type:</span> Hat Draft (Players select their
+        <div id="type" class="my-2"><span class="font-weight-bold text-h5">Type:</span> Hat Draft (Players select their
           experience level when registerring, and
           placed into "hats" based on that. Teams are then made by picking names from a hat)</div>
-        <div id="ball" class="text-h6"><span class="font-weight-bold text-h5">Ball:</span> Either 8.25" foam, or 7" no
+        <div id="ball" class="my-2"><span class="font-weight-bold text-h5">Ball:</span> Either 8.25" foam, or 7" no
           sting. You select what you would like during
           registration, and most votes will be what we play.</div>
       </v-col>
