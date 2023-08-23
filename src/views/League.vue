@@ -2,22 +2,31 @@
   <v-container class="text-center text-light-blue">
     <h1 class="text-h2 font-weight-bold">Fall League</h1>
     <div id="about" class="py-3 text-h5"></div>
-    <!-- <v-row class="text-left">
+    <v-row class="text-left">
       <v-spacer />
-      <v-col cols="12" lg="4" md="4">
+      <v-col cols="12" lg="12" md="12">
         <div id="when" class="text-h6">
-          When: Sundays from 5-8pm, September 25th-November 6th
+          <span class="font-weight-bold text-h5">When:</span> Sundays from 5-7pm, September 24th-November 5th
         </div>
         <div id="more-info" class="text-h6">
-          Cost: $40 if registered before August 14th, $45 after!
+          <span class="font-weight-bold text-h5">Cost:</span> $40!
         </div>
-        <div id="type" class="text-h6">Type: Random Draft</div>
-        <div id="ball" class="text-h6">Ball: 7" Foam</div>
+        <div id="type" class="text-h6"><span class="font-weight-bolt text-h5">Type:</span> Hat Draft (Players select their
+          experience level when registerring, and
+          placed into "hats" based on that. Teams are then made by picking names from a hat)</div>
+        <div id="ball" class="text-h6"><span class="font-weight-bold text-h5">Ball:</span> Either 8.25" foam, or 7" no
+          sting. You select what you would like during
+          registration, and most votes will be what we play.</div>
+      </v-col>
+      <v-col cols="12">
+        <v-btn block color="dark-blue"
+          href="https://docs.google.com/forms/d/e/1FAIpQLScTcJzcxGzNrTEFEkKwyRkrdmkOjn500Ib8JD2R5A1KvnmU5Q/viewform">
+          Register here! </v-btn>
       </v-col>
       <v-spacer />
-    </v-row> -->
+    </v-row>
 
-    <h3 class="mt-2">
+    <h3 class="mt-5">
       Congatulations to Team Alex for winning our fall 2022 3's league!
     </h3>
     <v-row v-for="asset in assets.items" :key="asset.sys.id" class="mt-5">
