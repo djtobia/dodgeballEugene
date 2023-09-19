@@ -40,7 +40,6 @@
               <th class="text-center">
                 Court
               </th>
-              <th class="text-center">Round</th>
               <th class="text-center">Team 1</th>
               <th class="text-center">Team 2</th>
               <th class="text-center">Ref</th>
@@ -49,7 +48,6 @@
           <tbody>
             <tr v-for="(data, index) in weeks" :key="index">
               <td>{{ data.court }}</td>
-              <td>{{ data.round }}</td>
               <td>{{ data.team1 }}</td>
               <td>{{ data.team2 }}</td>
               <td>{{ data.ref }}</td>
