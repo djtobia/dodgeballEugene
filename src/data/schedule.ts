@@ -1,4 +1,4 @@
-import getDataFromGoogleSheet from "@/utility/googleSheetAPI";
+import { getOpenDataFromGoogleSheet } from "@/utility/googleSheetAPI";
 import type { Schedule } from "@/interfaces/scheduleInterface";
 const checkIfPassed = (date: Date) => {
   const today = new Date();
@@ -19,7 +19,7 @@ const checkIfToday = (date: Date) => {
 };
 // self updating schedule for now. Will figure out how to update this via google sheet or something later
 export async function getData() {
-  const rows: string[][] = await getDataFromGoogleSheet();
+  const rows: string[][] = await getOpenDataFromGoogleSheet();
   const dates: Schedule[] = rows
     .map((row) => {
       return {
@@ -37,6 +37,7 @@ export async function getData() {
         cancelled: date.cancelled,
       };
     });
+  getLeagueScheduleFromGoogleSheet();
   return dates;
 }
 
