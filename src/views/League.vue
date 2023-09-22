@@ -34,7 +34,7 @@
       </v-col>
 
       <v-col cols="12">
-        <v-table>
+        <v-table class="leagueTable">
           <thead>
             <tr>
               <th class="text-center">
@@ -43,6 +43,7 @@
               <th class="text-center">Team 1</th>
               <th class="text-center">Team 2</th>
               <th class="text-center">Ref</th>
+              <th class="text-center">Time</th>
             </tr>
           </thead>
           <tbody>
@@ -51,6 +52,7 @@
               <td>{{ data.team1 }}</td>
               <td>{{ data.team2 }}</td>
               <td>{{ data.ref }}</td>
+              <td>{{ time(index) }}</td>
             </tr>
           </tbody>
         </v-table>
@@ -81,36 +83,31 @@ onMounted(async () => {
   leagueWeeks.value = await getLeagueScheduleFromGoogleSheet();
 });
 
-const headers = [
-  {
-    title: "Court",
-    align: "center",
-    sortable: false,
-    key: "court",
-  },
-  {
-    title: "Round",
-    align: "center",
-    sortable: false,
-    key: "round",
-  },
-  {
-    title: "Team 1",
-    align: "center",
-    sortable: false,
-    key: "team1",
-  },
-  {
-    title: "Team 2",
-    align: "center",
-    sortable: false,
-    key: "team2",
-  },
-  {
-    title: "Ref",
-    align: "center",
-    sortable: false,
-    key: "ref",
-  },
-];
+const time = (index: number): string => {
+  switch (index) {
+    case 0:
+      return "5:00 pm";
+    case 2:
+      return "5:15 pm";
+    case 4:
+      return "5:30 pm";
+    case 6:
+      return "5:45 pm";
+    case 8:
+      return "6:00 pm";
+    case 10:
+      return "6:15 pm";
+    case 12:
+      return "6:30 pm";
+    case 14:
+      return "6:45 pm";
+  }
+  return "";
+}
 </script>
+
+<style scss>
+.leagueTable tr:nth-child(odd)>td {
+  border-top: 2px solid white;
+}
+</style>

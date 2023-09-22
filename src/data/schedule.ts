@@ -37,7 +37,6 @@ export async function getData() {
         cancelled: date.cancelled,
       };
     });
-  getLeagueScheduleFromGoogleSheet();
   return dates;
 }
 

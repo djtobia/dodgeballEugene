@@ -3,7 +3,7 @@
     <h1 class="text-h2 font-weight-bold">Open Gym Schedule</h1>
     <div id="schedule">
       <ul>
-        <li :key="date.date" v-for="date in dates" :class="{ today: date.today, cancelled: date.cancelled }">
+        <li :key="index" v-for="(date, index) in dates" :class="{ today: date.today, cancelled: date.cancelled }">
           {{
             date.day +
             " " +
