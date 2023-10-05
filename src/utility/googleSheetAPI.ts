@@ -71,4 +71,26 @@ function createRangeString(ranges: string[]): string {
   return returnVal.slice(0, -1);
 }
 
-export { getOpenDataFromGoogleSheet, getLeagueScheduleFromGoogleSheet };
+function getLeagueStandings() {
+  const apiKey = "AIzaSyDjAeFHuMgWhYkLK5mxWU60zuaeuKiQfOE";
+  const spreadsheetId = "1NaP8qVpDOYBshvFSycsI670R-2ym7NLYkuTA8ej4ta4";
+  const range = "Standings!A2:P7";
+  return fetch(
+    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${range}?key=${apiKey}`
+  )
+    .then((response) => response.json())
+    .then((response) => {
+      const values = response.values;
+      if (values.length) {
+        return values.map((row: string[]) => {
+          return [row[1], row[13], row[14], row[15]];
+        }).sort((row1: string[], row2: string[]) => {
+          return row2[1].localeCompare(row1[1]) && row1[2].localeCompare(row2[2]);
+        });
+      } else {
+        console.log("No data found.");
+      }
+    });
+}
+
+export { getOpenDataFromGoogleSheet, getLeagueScheduleFromGoogleSheet, getLeagueStandings };

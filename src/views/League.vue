@@ -27,6 +27,32 @@
       <v-spacer /> -->
     </v-row>
 
+    <v-row class="text-center my-8">
+      <v-col cols="12">
+        <h2 class="font-weight-bold text-h6">Standings</h2>
+      </v-col>
+      <v-col cols="12">
+        <v-table>
+          <thead>
+            <tr>
+              <th class="text-center">Team</th>
+              <th class="text-center">Match Wins</th>
+              <th class="text-center">Match Losses</th>
+              <th class="text-center">Match Draws</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(row, index) in leagueStandings" :key="index">
+              <td>{{ row[0] }}</td>
+              <td>{{ row[1] }}</td>
+              <td>{{ row[2] }}</td>
+              <td>{{ row[3] === undefined ? 0 : row[3] }}</td>
+
+            </tr>
+          </tbody>
+        </v-table>
+      </v-col>
+    </v-row>
     <v-row class="text-center my-8" v-for="(weeks, index) in leagueWeeks" :key="index">
 
       <v-col cols="12">
@@ -70,7 +96,7 @@
 
 <script setup lang="ts">
 import { ref, inject, onMounted } from "vue";
-import { getLeagueScheduleFromGoogleSheet } from "@/utility/googleSheetAPI";
+import { getLeagueScheduleFromGoogleSheet, getLeagueStandings } from "@/utility/googleSheetAPI";
 import contentful from "@/helpers";
 import type { ContentfulClientApi, AssetCollection } from "contentful";
 const assets = ref({} as AssetCollection);
@@ -79,8 +105,10 @@ assets.value = await client.getAssets({
   "metadata.tags.sys.id[in]": "3sFall2022",
 });
 const leagueWeeks = ref();
+const leagueStandings = ref();
 onMounted(async () => {
   leagueWeeks.value = await getLeagueScheduleFromGoogleSheet();
+  leagueStandings.value = await getLeagueStandings();
 });
 
 const time = (index: number): string => {
