@@ -19,9 +19,9 @@
                 <li>
                   Wednesdays 6:00-8:00pm at the Bob Keefer Center in Springfield
                 </li>
-                <li>
+                <!-- <li>
                   Sundays, 5:00-7:00pm at the Bob Keefer Center in Springfield
-                </li>
+                </li> -->
               </ul>
               <v-container>
                 <v-row>
