@@ -1,4 +1,8 @@
-import type { Headers, Sheet, SheetValues } from "@/interfaces/leagueSheetInterfaces";
+import type {
+  Headers,
+  Sheet,
+  SheetValues,
+} from "@/interfaces/leagueSheetInterfaces";
 async function getOpenDataFromGoogleSheet() {
   // Authorize client using the loaded credentials
   // Get the data from the specified spreadsheet and sheet
@@ -82,15 +86,30 @@ function getLeagueStandings() {
     .then((response) => {
       const values = response.values;
       if (values.length) {
-        return values.map((row: string[]) => {
-          return [row[1], row[13], row[14], row[15]];
-        }).sort((row1: string[], row2: string[]) => {
-          return row2[1].localeCompare(row1[1]) && row1[2].localeCompare(row2[2]);
-        });
+        return values
+          .map((row: string[]) => {
+            return [row[1], row[13], row[14], row[15]];
+          })
+          .sort((row1: string[], row2: string[]) => {
+            const wins = parseInt(row2[1]) - parseInt(row1[1]);
+            const losses = parseInt(row1[2]) - parseInt(row2[2]);
+            const draws = parseInt(row2[3]) - parseInt(row1[3]);
+            if (wins > 0) {
+              return wins;
+            } else if (losses < 0) {
+              return losses;
+            } else {
+              return draws;
+            }
+          });
       } else {
         console.log("No data found.");
       }
     });
 }
 
-export { getOpenDataFromGoogleSheet, getLeagueScheduleFromGoogleSheet, getLeagueStandings };
+export {
+  getOpenDataFromGoogleSheet,
+  getLeagueScheduleFromGoogleSheet,
+  getLeagueStandings,
+};
