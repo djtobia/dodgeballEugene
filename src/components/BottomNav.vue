@@ -11,7 +11,7 @@
           <v-col cols="12" lg="4" xl="4" md="4">
             <v-btn color="dark-blue" flat block href="http://www.dylantobia.com" target="_blank"
               class="website-btn text-light-blue">
-              Dylan Tobia
+              The One and Only
             </v-btn>
           </v-col>
         </v-row>
